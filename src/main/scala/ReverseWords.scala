@@ -1,8 +1,6 @@
 /*
  * https://code.google.com/codejam/contest/351101/dashboard#s=p1
  */
-package com.fayi.scripts
-
 trait RW {
   def solve(data: List[String]) =
     data.map(l => data.indexWhere(_==l)+1 -> l).map(t => "Case #"+t._1+": "+t._2) foreach println
